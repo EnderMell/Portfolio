@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#head{
+    margin:0 auto;
+    width:100%;
+    height:auto;
+    background-color: rgb(2,0,36);
+
+}
+
+.navigation{
+    text-decoration: none;
+    color:#de3c4b;
+    font-weight: 800;
+}
+
+#home{
+    float: left;
+    font-size: 200%;
+    margin:1%;
+    margin-left:3%
+}
+
+.other{
+    float: right;
+    font-size: 125%;
+    margin:1%;
+}
+
+.navigation :hover{
+    text-decoration: none;
+    color:#eeb4b3;
+    font-weight: 800;
+    transition:ease 0.5s;
+}
+
+.mell{
+    color:#de3c4b;
+    font-size: 700%;
+    font-weight:900;
+    margin-left:10%;
+    text-align: center;
+    word-spacing: -50px;
+    text-shadow: 4px -4px 2px black;
+    ;
+}
+
+.crafts{
+    color: #eeb4b3;
+    font-size: 650%;
+    font-weight:900;
+    text-align: center;
+    margin-top:-6.7%;
+    margin-left:9%;
+
+    text-shadow: 4px -4px 2px black;
+    ;
+}
+
+#pfp{
+    width:13%;
+}
+
