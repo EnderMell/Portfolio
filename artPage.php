@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/artpage.css">
     <title>My Art</title>
 </head>
 
@@ -17,40 +17,80 @@
             <a href="artPage.php" class="navigation other">Art</a>
         </div>
     </div>
+
     <div id="top">
-        <img id="pfp" src="Img/Pfp.png">
-        <div id="toptext">
-            <h2>Michelle Tuinbeek</h2>
+
+        <div class="logo">
+            <div class="mell">Art</div>
+            <div class="crafts">Page</div>
         </div>
     </div>
+        <div class="container">
 
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "art";
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="drawing">
+                    <img src="img/popstars.png">
+                    <h2>The Angels</h2><br>
+                </div>
+                <div class="drawing">
+                    <img src="img/faithfullbasterdoutfit.png">
+                    <h2>FanArt</h2><br>
+                </div>
+                <div class="drawing">
+                    <img src="Img/HydroArchon.png">
+                    <h2>Hydro Archon</h2><br>
+                </div>
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+            </div>
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    // echo "Connected successfully";
+            <div class="row">
+                <div class="drawing">
+                    <img src="img/DndCharacter.png">
+                    <h2>Kaida</h2><br>
+                </div>
+                <div class="drawing">
+                    <img src="img/redraw.png">
+                    <h2>Melody</h2><br>
+                </div>
+                <div class="drawing">
+                    <img src="img/Spider sona.png">
+                    <h2>Spider Sona</h2><br>
+                </div>
+            </div>
 
-    $sql = "SELECT * FROM drawings"; // art defines the name of the tabel
-    $result = $conn->query($sql);
 
-    // if ($result->num_rows > 0) {
-    //     // output data of each row
-    //     while ($row = $result->fetch_assoc()) {
-    //         echo "Name of Drawing <br>" . $row["Name"] . "<br> " . $row["Description"] . "<br>";
-    //     }
-    // } else {
-    //     echo "0 results";
-    // }
-    ?>
+        </div>
+
+
+        <?php
+        $servername = "localhost";
+        $username = "root";
+        $password = "root";
+        $dbname = "art";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        // echo "Connected successfully";
+
+        $sql = "SELECT * FROM drawings"; // art defines the name of the tabel
+        $result = $conn->query($sql);
+
+        // if ($result->num_rows > 0) {
+        //     // output data of each row
+        //     while ($row = $result->fetch_assoc()) {
+        //         echo "Name of Drawing <br>" . $row["Name"] . "<br> " . $row["Description"] . "<br>";
+        //     }
+        // } else {
+        //     echo "0 results";
+        // }
+        ?>
 
 
 
